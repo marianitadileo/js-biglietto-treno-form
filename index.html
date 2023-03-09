@@ -5,14 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <label for="user-km">chilometri da percorrere</label>
-    <input type="text" id="user-km">
-    <label for="user-age">età</label>
-    <input type="text" id="user-age">
+    <h2><em>CALCOLA IL PREZZO DEL TUO BIGLIETTO</em></h2>
+    <div class="style-box">
+        <label for="user-name">Nome e Cognome</label>
+        <input type="text" id="user-name">
+        <label for="user-km">chilometri da percorrere</label>
+        <input type="text" id="user-km">
+        <label for="user-age">età</label>
+        <input type="text" id="user-age">
+        <span>prezzo</span>
+        <span id="price"></span>
+        <button id="send-btn">Invia</button>
+       
+    </div>
 
-    <button id="send-btn">Invia</button>
+    <div class="card">
+        <div>
+            <h3>Nome e Cognome</h3>
+            <span id="card-name" class="text"></span>
+        </div>
+        <div>
+            <h3>Costo</h3>
+            <span id="price-card" class="text"></span>
+        </div>
+        <div>
+            <h3>Sconto</h3>
+            <span id="discount-card" class="text"></span>
+        </div>
+        <div>
+            <h3>N.treno</h3>
+            <span id="n-card" class="text"></span>
+        </div>
+
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
