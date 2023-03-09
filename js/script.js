@@ -1,9 +1,3 @@
-const priceKm = 0.21;
-const userKm = inputUserKm.value;
-
-const priceJourney = userKm * priceKm;
-console.log(priceJourney);
-
 const sendBtn = document.getElementById("send-btn");
 sendBtn.addEventListener("click", function() {
     const inputUserKm = document.getElementById("user-km");
@@ -13,6 +7,11 @@ sendBtn.addEventListener("click", function() {
     console.log(userKm, userAge);
 })
 
+const priceKm = 0.21;
+const userKm = inputUserKm.value;
+
+const priceJourney = userKm * priceKm;
+console.log(priceJourney);
 
 let discountUnder = 0; 
 let discountOver = 0;
